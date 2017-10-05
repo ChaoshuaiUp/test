@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <pre>
+       <font color="aqua">aaa</font>
+        hello vm
+
+        ##注释
+        #*
+        多行注释
+         *#
+        $!{value1}
+        $!{map}
+        #foreach($num in $list)
+            listNumber $!{foreach.index}/$!{foreach.count}:$!{num}
+        #end
+        #foreach($key in $map.keySet())
+            mapNumber $!{foreach.index}/$!{foreach.count}:$!{key} $map.get($key)
+        #end
+    </pre>
+  </body>
+</html>
